@@ -58,7 +58,7 @@ get_filename() {
   local version_short
   version_short=$(echo "$version" | tr -d "v")
 
-  echo "${binary_name}_${platform}.tar.gz"
+  echo "${binary_name}_${platform}_${version_short}.tar.gz"
 }
 
 # https://github.com/GoogleContainerTools/kpt/releases/download/v0.33.0/kpt_linux_amd64_0.33.0.tar.gz
